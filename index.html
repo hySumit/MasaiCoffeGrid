@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #F8F3F4;
+            font-family: 'poppins', sans-serif;
+        }
+      #parent {
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5%;
+      }
+      #container {
+        display: grid;
+        grid-template-rows: repeat(3, 140px);
+        grid-template-columns: repeat(3, 375px);
+        gap: 30px;
+      }
+      .grid {
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        border-radius: 10px;
+      }
+      .menu {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 9%;
+        margin-right: 9%;
+        margin-top: 7%;
+      }
+      .grid{
+        background-color: #FEFEFE;
+      }
+      .menu>h3{
+        font-size: 20px;
+        font-weight: 600;
+      }
+      p{
+        
+        color: #a1a0a0;
+        margin-left: 9%;
+        margin-right: 9%;
+        margin-top: 5%;
+        line-height: 24px;
+        font-size: 16.9px;
+      }
+      h3+h3{
+        color: #B68834;
+      }
+      @media all and (min-width:200px) and (max-width:450px) {
+        #container{
+          grid-template-columns: repeat(1,1fr);
+
+        }
+
+      }
+      @media all and (min-width:451px) and (max-width:750px){
+        #container{ 
+          grid-template-columns: repeat(2,1fr);
+        }
+      }
+    </style>
+    <title>Grid Coffee</title>
+  </head>
+  <body>
+      <div id="container">
+        <div class="grid">
+          <div class="menu">
+            <h3>Cappuccino</h3>
+            <h3>$49</h3>
+          </div>
+          <p>
+            Usage of the internet is becoming more comman due to rapid advance.
+          </p>
+        </div>
+        <div class="grid">
+          <div class="menu">
+            <h3>Americano</h3>
+            <h3>$49</h3>
+          </div>
+          <p>
+            Usage of the internet is becoming more comman due to rapid advance.
+          </p>
+        </div>
+        <div class="grid">
+          <div class="menu">
+            <h3>Espresso</h3>
+            <h3>$49</h3>
+          </div>
+          <p>
+            Usage of the internet is becoming more comman due to rapid advance.
+          </p>
+        </div>
+        <div class="grid">
+          <div class="menu">
+            <h3>Macchiato</h3>
+            <h3>$49</h3>
+          </div>
+          <p>
+            Usage of the internet is becoming more comman due to rapid advance.
+          </p>
+        </div>
+        <div class="grid">
+          <div class="menu">
+            <h3>Mocha</h3>
+            <h3>$49</h3>
+          </div>
+          <p>
+            Usage of the internet is becoming more comman due to rapid advance.
+          </p>
+        </div>
+        <div class="grid">
+          <div class="menu">
+            <h3>Coffee Latte</h3>
+            <h3>$49</h3>
+          </div>
+          <p>
+            Usage of the internet is becoming more comman due to rapid advance.
+          </p>
+        </div>
+        <div class="grid">
+          <div class="menu">
+            <h3>Piccolo Latte</h3>
+            <h3>$49</h3>
+          </div>
+          <p>
+            Usage of the internet is becoming more comman due to rapid advance.
+          </p>
+        </div>
+        <div class="grid">
+          <div class="menu">
+            <h3>Ristretto</h3>
+            <h3>$49</h3>
+          </div>
+          <p>
+            Usage of the internet is becoming more comman due to rapid advance.
+          </p>
+        </div>
+        <div class="grid">
+          <div class="menu">
+            <h3>Affogato</h3>
+            <h3>$49</h3>
+          </div>
+          <p>
+            Usage of the internet is becoming more comman due to rapid advance.
+          </p>
+        </div>
+      </div>
+  </body>
+</html>
